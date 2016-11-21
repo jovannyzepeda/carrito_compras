@@ -20,19 +20,19 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'shoppingcart');
+define('DB_NAME', 'pavel');
 
 /** MySQL database username */
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'ddDD//99');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'O[[({ClkI^8ySQkd9ygmH{HOEHA^FST *%&eB-~/Av^MXlbHw7A|3Dd3|CE8o}|o');
+define('SECURE_AUTH_KEY',  '_@YF_V%iO,bq,=!/jUns!3ru|H[k93]uc(N*j_ZlhiXYv!KF,{RPqGP*xyOjck?k');
+define('LOGGED_IN_KEY',    'k^EaFOsj(}WGWWRld}z%3GUb|1C^ut_fg`uZC#>sboKyHr)0D(/|epaC&(ErW9~g');
+define('NONCE_KEY',        'S?}0~->DK+qj;tJBYl-$3KKo4*N`C390b$HZRV*3*x4:tO~qiU*-7x8U@z+i;Y{2');
+define('AUTH_SALT',        'H#.GFBJ[!2-LAA!Yj__$6[>^X3xc>51~GJg;7)nccsMf20pm+nPZSUbQ`[y{.m!F');
+define('SECURE_AUTH_SALT', 'gw_D?&TcId5<ky~Y@wqP-DF[jzlu[_!Jb53s$GcG^E2DeSZrvB3~=wNyD@HUQ5zf');
+define('LOGGED_IN_SALT',   'emaH$AWM <*6sy1!K^2gSm&v;U@P<E-{XP6RaRr(4z> l1FyT?[z0p@(qM|=3.q+');
+define('NONCE_SALT',       'IHr}xF|YuO0K=oz=MTWZA1%2RFbI4QbtXjLo3=Qd#*{OdCqVmS{:{=K9*oYS]*B[');
 
 /**#@-*/
 

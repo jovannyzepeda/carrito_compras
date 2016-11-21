@@ -123,7 +123,7 @@ class WC_Checkout {
 				'type' => 'textarea',
 				'class' => array('notes'),
 				'label' => __( 'Order Notes', 'woocommerce' ),
-				'placeholder' => _x('Notes about your order, e.g. special notes for delivery.', 'placeholder', 'woocommerce')
+				'placeholder' => _x('Notas adicionales.', 'placeholder', 'woocommerce')
 			)
 		);
 
@@ -470,7 +470,7 @@ class WC_Checkout {
 										$this->posted[ $key ] = strtoupper( str_replace( ' ', '', $this->posted[ $key ] ) );
 
 										if ( ! WC_Validation::is_postcode( $this->posted[ $key ], $_POST[ $fieldset_key . '_country' ] ) ) :
-											wc_add_notice( __( 'Please enter a valid postcode/ZIP.', 'woocommerce' ), 'error' );
+											wc_add_notice( __( 'Ingresar codigo postal valido.', 'woocommerce' ), 'error' );
 										else :
 											$this->posted[ $key ] = wc_format_postcode( $this->posted[ $key ], $_POST[ $fieldset_key . '_country' ] );
 										endif;

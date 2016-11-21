@@ -77,7 +77,7 @@ class WC_Settings_Accounts extends WC_Settings_Page {
 			),
 
 			array(
-				'title'         => __( 'Login', 'woocommerce' ),
+				'title'         => __( 'Iniciar sesión', 'woocommerce' ),
 				'desc'          => __( 'Display returning customer login reminder on the "Checkout" page', 'woocommerce' ),
 				'id'            => 'woocommerce_enable_checkout_login_reminder',
 				'default'       => 'yes',

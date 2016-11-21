@@ -65,15 +65,15 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 									$actions = array(
 										'pay'    => array(
 											'url'  => $order->get_checkout_payment_url(),
-											'name' => __( 'Pay', 'woocommerce' )
+											'name' => __( 'Pagar', 'woocommerce' )
 										),
 										'view'   => array(
 											'url'  => $order->get_view_order_url(),
-											'name' => __( 'View', 'woocommerce' )
+											'name' => __( 'Ver', 'woocommerce' )
 										),
 										'cancel' => array(
 											'url'  => $order->get_cancel_order_url( wc_get_page_permalink( 'myaccount' ) ),
-											'name' => __( 'Cancel', 'woocommerce' )
+											'name' => __( 'Cancelar', 'woocommerce' )
 										)
 									);
 
@@ -104,11 +104,11 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 	<?php if ( 1 < $customer_orders->max_num_pages ) : ?>
 		<div class="woocommerce-Pagination">
 			<?php if ( 1 !== $current_page ) : ?>
-				<a class="woocommerce-Button woocommerce-Button--previous button" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page - 1 ) ); ?>"><?php _e( 'Previous', 'woocommerce' ); ?></a>
+				<a class="woocommerce-Button woocommerce-Button--previous button" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page - 1 ) ); ?>"><?php _e( 'Anterior', 'woocommerce' ); ?></a>
 			<?php endif; ?>
 
 			<?php if ( $current_page !== intval( $customer_orders->max_num_pages ) ) : ?>
-				<a class="woocommerce-Button woocommerce-Button--next button" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page + 1 ) ); ?>"><?php _e( 'Next', 'woocommerce' ); ?></a>
+				<a class="woocommerce-Button woocommerce-Button--next button" href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page + 1 ) ); ?>"><?php _e( 'Siguiente', 'woocommerce' ); ?></a>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
@@ -116,9 +116,9 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 <?php else : ?>
 	<div class="woocommerce-Message woocommerce-Message--info woocommerce-info">
 		<a class="woocommerce-Button button" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php _e( 'Go Shop', 'woocommerce' ) ?>
+			<?php _e( 'Ir a la', 'woocommerce' ) ?>
 		</a>
-		<?php _e( 'No order has been made yet.', 'woocommerce' ); ?>
+		<?php _e( 'No hay ordenes de compras registradas.', 'woocommerce' ); ?>
 	</div>
 <?php endif; ?>
 

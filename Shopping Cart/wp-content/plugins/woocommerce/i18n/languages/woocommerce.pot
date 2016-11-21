@@ -20145,7 +20145,7 @@ msgid "Next"
 msgstr ""
 
 #: templates/myaccount/orders.php:121
-msgid "No order has been made yet."
+msgid "No order has been masde yet."
 msgstr ""
 
 #: templates/myaccount/payment-methods.php:51
